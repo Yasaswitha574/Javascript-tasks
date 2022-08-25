@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JAVASCRIPT TASK1</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+</head>
+<body>
+   <h1 align="center" id="firstValue">5</h1>
+   <div align="center">
+    	<button type="button" onclick="addTheValue(5)" >Button1(add) </button>
+   		<button type="button" onclick="multiplyBy(2)">Button2(Multiply) </button> 
+   		<button type="button" onclick="subtractBy(10)" >Button3(subtract)</button>
+   		<button type="button" onclick="resetBy(5)" >Reset</button>
+   </div>
+   <script>
+      function addTheValue(secondValue) {
+      var fValue = document.getElementById("firstValue");
+      firstValue.innerHTML = parseInt(fValue.innerHTML) +
+      parseInt(secondValue);
+     }
+      function multiplyBy(secondValue) {
+      var fValue = document.getElementById("firstValue");
+      firstValue.innerHTML = parseInt(fValue.innerHTML) *
+      parseInt(secondValue);
+     }
+     function subtractBy(secondValue) {
+      var fValue = document.getElementById("firstValue");
+      firstValue.innerHTML = parseInt(fValue.innerHTML) -
+      parseInt(secondValue);
+     }
+     function resetBy(secondValue) {
+      document.write(5);
+     }
+   </script>
+  </body>
+</html>
